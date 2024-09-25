@@ -1,0 +1,99 @@
+.PrimaryBtn{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 119px;
+    height: 48px;
+    background: #8C10B8;
+    border: 1px solid #303436;
+    border-radius: 50px;
+    transition: 0.4s;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid #8C10B8;
+        transition: 0.4s;
+        & .text{
+            color: #8C10B8;
+        }
+    }
+    &:active{
+        background: #8C10B8;
+        border: 1px solid #303436;
+    }
+}
+
+.PrimaryBtn .text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #E8E6E3;
+}
+
+.SecondBtn{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 48px;
+    border: 1px solid #8C10B8;
+    border-radius: 50px;
+    &:hover{
+        background-color: #8C10B8;
+        border: 1px solid #8C10B8;
+        transition: 0.4s;
+        & .text{
+            color: #E8E6E3;
+        }
+    }
+    &:active{
+        background: transparent;
+        border: 1px solid #303436;
+    }
+}
+
+.SecondBtn .text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #E8E6E3;
+}
+
+.light .text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8C10B8;
+    transition: 0.4s;
+    &:hover{
+        color: #E8E6E3;
+    }
+}
+
+.high{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 172.38px;
+    height: 59.6px;
+    border: 1px solid #8C10B8;
+    border-radius: 50px;
+}
+
+.dashIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: #8C10B8;
+    border-radius: 30px;
+}

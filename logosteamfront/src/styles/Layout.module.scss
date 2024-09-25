@@ -1,0 +1,126 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1240px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1240px;
+    }
+}
+
+.containerDashboard {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 572px) {
+    .containerDashboard {
+        max-width: 572px;
+    }
+}
+
+@media (min-width: 992px) {
+    .containerDashboard {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1520px) {
+    .containerDashboard {
+        max-width: 1250px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .containerDashboard {
+        max-width: 1650px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexNoWrap {
+    flex-wrap: nowrap;
+}
+
+.alignsCenter {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyAround {
+    justify-content: space-around;
+}
+
+.justifyStart {
+    justify-content: flex-start;
+}
+
+$breakpoints: (
+    'mobile': 550px,
+    'tablet': 1280px,
+    'desktop' : 5000px,
+    ) !default;
+
+@mixin respond($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}

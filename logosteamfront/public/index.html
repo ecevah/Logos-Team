@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Logos</title>
+    <link rel="icon" type="image/x-icon" href="./favLogo.svg">
+  </head>
+  <style>
+    .isLoading{
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+      background-color: #e9e9e9;
+    }
+
+    .isloadingImg{
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      z-index: 101;
+      animation: spin 4s linear infinite;
+      width: 75px;
+      height: 75px;
+    }
+
+    .isloadinglogo{
+      position: absolute;
+      top: calc(44% - 50px);
+      left: calc(50% - 150px);
+      z-index: 101;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class='isLoading' id="isLoading">
+      <img class='isloadinglogo' src="./logosLogoLight.svg" alt='loadingImg' width='300' height='150'>
+      <svg class='isloadingImg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M18.364 5.63604L16.9497 7.05025C15.683 5.7835 13.933 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12H21C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.4853 3 16.7353 4.00736 18.364 5.63604Z" fill="rgba(140,16,184,1)"></path></svg>
+    </div>
+    <div id="root"></div>
+    <div id="unroot" style="display: none;">
+      <div style="position: static; overflow: hidden; padding-top: 61px;">
+        <img src="./errorBG.svg" alt="background" height="50%" width="99%" style="position: absolute; left: 1%; z-index: -1;">
+      </div>
+      <img src="./logosLogoLight.svg" height="75" width="150" alt="logo" style="margin-bottom: 200px;"> 
+      <section id="content">
+        <img src="./x.svg" height="125" width="160" alt="logo" style="margin-bottom: 25px;">
+        <div id="title">Bu penceredeki oturumunuz son buldu.</div>
+        <div id="text">Başka bir pencereden açılmış.</div>
+        <a href="https://www.teamlogos.tech/" id="btn">ANA SAYFAYA DÖN</a>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  </body>
+</html>

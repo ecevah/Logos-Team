@@ -1,0 +1,1032 @@
+@import "./Layout.module.scss";
+
+.headerItemDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerItem{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    color: #858585;
+    margin-right: 55px;
+    text-decoration: none;
+    text-align: start;
+    margin-left: 5px;
+}
+
+.active{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    color: #8C10B8;
+}
+
+.dropdawnList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbarbtn .headerItem{
+    margin-right: 0px;
+}
+
+.dropdawnOpen{
+    background-color: #e9e9e9;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.26s ease;
+}
+
+.dropdawnClose{
+    background-color: #FFFFFF;
+    transform: scaleY(0);    
+    transform-origin: top;
+    transition: transform 0.26s ease;
+}
+
+.headerInclusive{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.navbarbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    color: #212529;
+    margin-bottom: 15px;
+}
+
+.sectionInclusive{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navbar{
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('../img/navbarBG.svg');
+    height: 100vh;
+    filter: drop-shadow(0.892857px 0px 44.6429px rgba(0, 0, 0, 0.1));
+    padding-bottom: 90px;
+    .navbarContent{
+        padding-top: 90px;
+        padding-left: 90px;
+    }
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-top: 50px;
+    border: none;
+    margin: 0px;
+    height: 100vh;
+    margin-left: 112px;
+    & .inclusive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .headerItemDiv{
+            display: flex;
+            flex-direction: column;           
+            & .headerItem{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 27px;
+                color: #858585;
+                margin-right: 55px;
+                text-decoration: none;
+            }
+            & .active{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 27px;
+                color: #8C10B8;
+                text-align: start;
+            }
+        }
+    }
+}
+
+.sideContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 60px;
+
+    & .profilCard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+
+        & .profilImg{
+            box-sizing: border-box;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #E9ECEF;
+            filter: drop-shadow(0px 0px 3px rgba(60, 72, 88, 0.15));
+            border-radius: 50px;
+            margin-right: 19px;
+        }
+
+        & .profilName{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #212529;
+            ;
+        }
+
+        & .profilTag{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: #858585;
+        }
+    }
+}
+
+.contentInclusive{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1238px;
+
+    & .reservationInclusive{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+        margin-top: 35px;
+
+        & .reservationTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #D9D9D9;
+
+            & .resTitle{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 22px;
+                color: #212529;
+            }
+
+            & .resNumber{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 22px;
+                color: #858585;
+            }
+        }
+    
+        & .clientCard{
+            display: flex;
+            flex-direction: row;   
+            width: 234.62px;
+            margin-top: 33px;
+
+            & .clientImg{
+                box-sizing: border-box;
+                border: 1px solid #E9ECEF;
+                filter: drop-shadow(0px 0px 3px rgba(60, 72, 88, 0.15));
+                border-radius: 22.5px !important;
+                margin-right: 16px;
+                overflow: hidden;
+            }
+        
+            & .clientContent{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                & .clientTitle{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #212529;
+                    text-align: start;
+                }
+
+                & .clientText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13.5px;
+                    line-height: 20px;
+                    color: #858585;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+.carouselText{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #858585;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.carouselName{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #858585;
+}
+
+.sponsorContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    mix-blend-mode: luminosity;
+    padding-left: 45px;
+    padding-right: 45px;
+    align-items: center;
+}
+
+.mobileRowDiv{
+    display: none;
+}
+
+.none{
+    display: none;
+}
+
+.isLoading{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #e9e9e9;
+    & .isloadingImg{
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+        z-index: 101;
+        animation: spin 4s linear infinite;
+        width: 75px;
+        height: 75px;
+    }
+    & .isloadinglogo{
+        position: absolute;
+        top: calc(44% - 50px);
+        left: calc(50% - 150px);
+        z-index: 101;
+    }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reservationPageInclusive{
+    width: 1200px;
+    height: 766px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .reservationPageContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        & .reservationPageFirstColumn{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 275px;
+        }
+
+        & .reservationPageColumn{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13.7581px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: #212529;
+            border-bottom: 0.978358px solid #E9ECEF;
+            box-sizing: border-box;
+            justify-content: center;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            height: 70px;
+
+            & .clientCard{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            & .reservationPageBtn{
+                box-sizing: border-box;
+                width: 33.02px;
+                height: 33.02px;
+                background: rgba(240, 115, 90, 0.1);
+                border: 0.917208px solid rgba(240, 115, 90, 0.1);
+                box-shadow: 0px 2.75162px 4.58604px rgba(240, 115, 90, 0.3);
+                border-radius: 27.5162px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            & .reservationPageBtnCheck{
+                box-sizing: border-box;
+                width: 33.02px;
+                height: 33.02px;
+                background: rgb(102 47 36 / 10%);
+                border: 0.917208px solid rgb(102 47 36 / 10%);
+                box-shadow: 0px 2.75162px 4.58604px rgb(102 47 36 / 10%);
+                border-radius: 27.5162px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            & .reservationPageBtnLogIn{
+                box-sizing: border-box;
+                width: 33.02px;
+                height: 33.02px;
+                background: rgba(0, 179, 131, 0.1);
+                border: 0.917208px solid rgba(0, 179, 131, 0.1);
+                box-shadow: 0px 2.75162px 4.58604px rgba(0, 179, 131, 0.1);
+                border-radius: 27.5162px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .reservationPageInclusive{
+        width: 1200px !important;
+    }
+    .overflowdiv{
+        overflow: scroll;
+        width: 100%;
+    }
+    .overflowdiv::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width: 1919px) {
+    .reservationPageInclusive{
+        width: 100% !important;
+    }
+    .overflowdiv{
+        overflow: scroll;
+        width: 100%;
+    }
+    .overflowdiv::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width: 1519px) {
+    .reservationPageInclusive{
+        width: 100% !important;
+    }
+    .overflowdiv{
+        overflow: scroll;
+        width: 100%;
+    }
+    .overflowdiv::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .reservationPageInclusive{
+        width: 756px !important;
+    }
+    .overflowdiv{
+        overflow: scroll;
+        width: 100%;
+    }
+    .overflowdiv::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .overflowdiv{
+        overflow: scroll;
+        width: 450px;
+    }
+    .overflowdiv::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.paginationDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & .paginatinBarTitle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.641px;
+        line-height: 22px;
+        color: #8492A6;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contentInclusive .sideContent{
+        display: none;   
+    }
+    .contentInclusive .sponsorContent{
+        display: none;
+    }
+    .headerSection{
+        display: none !important;
+    }
+    .dropdawnClose{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .contentInclusive{
+        width: 843px;
+    }
+    .mobileRowDiv{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: none;
+    }
+    .contentInclusive .sideContent{
+        display: none;   
+    }
+    .contentInclusive .sponsorContent{
+        display: none;
+    }
+    .headerSection{
+        display: none;
+    }
+    .dropdawnClose{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1519px) {
+    .contentInclusive{
+        width: 843px;
+    }
+    .inclusive{
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .profilCard{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .mobileRowDiv{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex !important;
+    }
+    .headerItemDiv, .headerBtn {
+        display: none !important;
+    }
+    .reservationInclusive{
+        margin-bottom: 100px !important;
+    }
+    .navbar{
+        display: none;
+    }
+    .section{
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+    .contentInclusive .sideContent{
+        display: flex;   
+        margin-top: 0px;
+    }
+    .contentInclusive .sideContent .profilCard{ 
+        margin-top: 0px;
+    }
+    .contentInclusive .sponsorContent{
+        display: flex;   
+        margin-bottom: 60px;   
+    }
+    .headerSection{
+        display: block;
+    }
+    .dropdawnClose{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contentInclusive{
+        width: 450px;
+    }
+    .mobileRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobileRowDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 33px;
+    }
+    .inclusive{
+        width: 100% !important;
+    }
+    .hamburgerMenu{
+        display: flex !important;
+    }
+    .headerItemDiv, .headerBtn {
+        display: none !important;
+    }
+    .reservationInclusive{
+        margin-bottom: 100px !important;
+    }
+    .contentInclusive .sideContent{
+        display: flex;   
+        margin-top: 0px;
+    }
+    .contentInclusive .sideContent .profilCard{ 
+        margin-top: 0px;
+    }
+    .contentInclusive .sponsorContent{
+        display: flex;   
+        margin-bottom: 60px;   
+    }
+    .section{
+        height: 100%;
+    }
+    .headerSection{
+        display: block;
+    }
+    .dropdawnClose{
+        display: block;
+    }
+}
+
+.reservationPayCheck{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 87px;
+    height: 29px;
+    background: rgba(0, 179, 131, 0.1);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    color: #00B383;
+}
+
+.reservationPageShow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 117px;
+    height: 29px;
+    background: rgba(140, 16, 184, 0.1);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    color: #8C10B8;
+}
+
+.settingSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 14%;
+    margin-left: 100px;
+    margin-right: 50px;
+    & .settingTitle{
+        border-bottom: 2px solid #E9ECEF;
+        width: calc(100% - 60px);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #212529;
+        padding-left: 24px;
+        padding-bottom: 32px;
+    }
+    & .settingInclusive{
+        display: flex;
+        flex-direction: column;
+        
+        & .settingImgInclusive{
+            display: flex;
+            flex-direction: row;
+            padding-left: 31px;
+            padding-right: 31px;
+            margin-top: 35px;
+            & .settingImgTitleInclusive{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                & .settingImgContent{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 24px;
+                    & .settingImgTitle{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #212529;
+                    }
+                    & .settingImgText{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 24px;
+                        color: #8492A6;
+                        width: 270px;
+                    }
+                }
+                & .settingImgButtonDiv{
+                    display: flex;
+                    flex-direction: row;
+                    & .settingImgBtnP{
+                        background: #8C10B8;
+                        border-radius: 5px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 22px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                        width: 86.9px;
+                        height: 44.9px;
+                    }
+                    & .settingImgBtnL{
+                        background: rgba(140, 16, 184, 0.1);
+                        border-radius: 5px;
+                        width: 86.9px;
+                        height: 44.9px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 22px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #8C10B8;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.settingInput{
+    width: 313px;
+    height: 42.25px;
+    background: #FFFFFF;
+    border: 1.10452px solid #E9ECEF;
+    border-radius: 6.62714px;
+    margin-bottom: 24px;
+}
+
+.settingLabel{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.settingImgBtnP::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .settingImgBtnP::before {
+    content: 'Yükle';
+    background: #8C10B8;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    width: 86.9px;
+    height: 44.9px;
+  }
+  .settingImgBtnP:hover::before {
+    border-color: black;
+  }
+  .settingImgBtnP:active::before {
+    background: #8C10B8;
+  }
+
+  .settingBtnContent{
+    background: rgba(140, 16, 184, 0.1);
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #8C10B8;
+    width: 100%;
+    height: 45px;
+  }
+
+.passContent{
+    display: flex;
+    flex-direction: column;
+    & .settingLabel{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #212529;
+    }
+    & .settingInput{
+        height: 42.25px;
+        background: #FFFFFF;
+        border: 1.10452px solid #E9ECEF;
+        border-radius: 6.62714px;
+        padding-left: 8px;
+        width: 100%;
+        min-width: 400px;
+    }
+    & .settingBtnContent{
+        height: 44.9px;
+        background: rgba(140, 16, 184, 0.1);
+        border-radius: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1519px)  {
+    .settingSection{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .settingPassInclusive{
+        & .settingTitle{
+            margin-top: 60px;
+        }
+    }
+}
+
+.activeIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 3px solid rgba(68, 250, 129, 0.5);;
+    background-color: #53C797;;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.unActiveIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 3px solid rgb(48, 48, 48,0.5);
+    background-color: rgb(56, 56, 56,0.6);
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.activeButton{
+    height: 48px;
+    width: 160px;
+    border: 1px solid #8C10B8;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    color: #8C10B8;
+}
+
+.settingDeleteTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F0735A;
+    width: 100%;
+    border-bottom: 3.2px solid #E9ECEF;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.settingDeleteText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212529;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 27px;
+}
+
+.settingDeleteBtn{
+    width: 169px;
+    height: 44.9px;
+    background: #F0735A;
+    border: 3px solid #F0735A;
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.clientImg{
+    box-sizing: border-box;
+    border: 1px solid #E9ECEF;
+    filter: drop-shadow(0px 0px 3px rgba(60, 72, 88, 0.15));
+    border-radius: 22.5px !important;
+    margin-right: 16px;
+    overflow: hidden;
+}
+
+.talkClientTitleCard{
+    border-bottom: 1px solid #E9ECEF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #212529;
+    margin-bottom: 50px;
+    padding-bottom: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+.talkClientText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 20px;
+    color: #212529;
+}
+
+.emoTitleCard{
+    width: 100%;
+    border-bottom: 1px solid #E9ECEF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 17px;
+    margin-top: 50px;
+}
+
+.emoCardTextTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #212529;
+    margin-top: 10px;
+}
+
+.emoCardText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 15px;
+    color: #212529;
+}

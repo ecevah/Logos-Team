@@ -1,0 +1,80 @@
+{
+    "swagger":"2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Logos Api Docs",
+        "description": "Logos Team Api Docd",
+        "license": {
+            "name": "Logos",
+            "url": "http:"
+        }
+    },
+    "paths": {
+        "/client": {
+        "post": {
+          "tags": [
+            "Client"
+          ],
+          "summary": "Create a new user in system",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "model",
+              "in": "body",
+              "description": "person detail",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            },
+            "400": {
+              "description": "Failed. Bad post data."
+            }
+          }
+        }
+        },
+        "/psyc": {
+            "post": {
+            "tags": [
+                "Psyc"
+            ],
+            "summary": "Create a new user in system",
+            "produces": [
+                "application/json"
+            ],
+            "parameters": [
+                {
+                "name": "model",
+                "in": "body",
+                "description": "person detail",
+                "required": true,
+                "schema": {
+                    "$ref": "#/definitions/User"
+                }
+                }
+            ],
+            "responses": {
+                "200": {
+                "description": "OK",
+                "schema": {
+                    "$ref": "#/definitions/User"
+                }
+                },
+                "400": {
+                "description": "Failed. Bad post data."
+                }
+            }
+            }
+        }
+    }
+}

@@ -1,0 +1,1714 @@
+@import "./Layout.module.scss";
+
+.logosLogo{
+    width: 175px;
+    height: 90.12px;
+}
+
+.headers{
+    background: #0A010D url("../img/firstBG.svg") no-repeat;
+    background-size: cover;
+    padding-top: 53px;
+}
+
+.lightHeaders{
+    background: #e8e8e8 url("../img/firstBG.svg") no-repeat;
+    background-size: cover;
+    padding-top: 53px;
+    position: relative;
+    top: -2px;
+    outline-style: solid;
+    outline-color: #e8e8e8;
+    outline-width: 4px;
+}
+
+.themeBtn{
+    position: relative;
+}
+
+.dark{
+    font-size: 20px;
+    color: #e2e1e3;
+    transition: 0.4s;
+    margin-left: 5px;
+    &:hover{
+        color: #8C10B8;
+        transition: 0.4s;
+    }
+    @include respond('desktop'){
+        position: absolute;
+        top: 10px;
+    }
+    @include respond('tablet'){
+        position: absolute;
+        top: 8px;
+        left: -10px;
+    }
+    @include respond('mobile'){
+        position: absolute;
+        top: 8px;
+        left: -10px;
+    }
+}
+
+.light{
+    margin-left: 5px;
+    font-size: 20px;
+    color: #373737;
+    transition: 0.4s;
+    &:hover{
+        color: #8C10B8;
+        transition: 0.4s;
+    }
+    @include respond('desktop'){
+        position: absolute;
+        top: 10px;
+    }
+    @include respond('tablet'){
+        position: absolute;
+        top: 8px;
+        left: -10px;
+    }
+    @include respond('mobile'){
+        position: absolute;
+        top: 8px;
+        left: -10px;
+    }
+}
+
+.openlight{
+    margin-left: 5px;
+    font-size: 20px;
+    color: #373737;
+}
+
+.headersDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLink{
+    @include respond('tablet'){
+       display: none;
+    }
+    @include respond('mobile'){
+       display: none;
+    }
+}
+
+.dropdownMenu{
+    @include respond('desktop'){
+        display: none;
+     }
+     @include respond('tablet'){
+        display: block;
+        position: fixed;
+        z-index: 998;
+        background: #0A010D;
+        width: 100%;
+        top: -20px;
+     }
+     @include respond('mobile'){
+        display: block;
+        position: fixed;
+        z-index:998;
+        background: #0A010D;
+        width: 100%;
+        top: -20px;
+     }
+}
+
+.lightdropdownMenu{
+    @include respond('desktop'){
+        display: none;
+     }
+     @include respond('tablet'){
+        display: block;
+        position: fixed;
+        z-index: 998;
+        background: #e2e1e3;
+        width: 100%;
+        top: -20px;
+        padding-bottom: 3000px;
+     }
+     @include respond('mobile'){
+        display: block;
+        position: fixed;
+        z-index:998;
+        background: #e2e1e3;
+        width: 100%;
+        top: -20px;
+        padding-bottom: 3000px;
+     }
+}
+
+.dropdownMenuNone{
+    display: none;
+}
+
+.headerFixed{
+    position: fixed;
+    background-color: #0A010D;
+    width: 100%;
+    z-index: 999;
+}
+
+.lightheaderFixed{
+    position: fixed;
+    background-color: #e2e1e3;
+    width: 100%;
+    z-index: 999;
+}
+
+.dropdownInclusive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 200px);
+    margin-top: 380px;
+}
+
+.dropdownContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+    @include respond('tablet'){
+       margin-top: 75px;
+    }
+    @include respond('mobile'){
+       margin-top: 400px;
+    }
+}
+
+.dropdawnBtn{
+    margin-top: 500px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobileBtnDiv{
+    @include respond('desktop'){
+       display: none;
+    }
+    @include respond('tablet'){
+       display: flex;
+    }
+    @include respond('mobile'){
+       display: flex;
+    }
+
+    & .hamburgerMenu{
+        color: #e2e1e3;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    & .lighthamburgerMenu{
+        color: #373737;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+
+.hamburgerBg{
+    background-color: #0A010D;
+    padding-top: 53px;
+}
+
+.lighthamburgerBg{
+    background-color: #e2e1e3;
+    padding-top: 53px;
+}
+
+.headerLinkItemHamburger{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #E8E6E3;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.lightheaderLinkItemHamburger{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #373737;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.headerLinkItem{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #E8E6E3;
+    margin-left: 37.5px;
+    margin-right: 37.5px;
+    transition: 0.4s;
+    &:hover{
+        color: #8C10B8;
+        transition: 0.4s;
+    }
+    &:active{
+        color: #373737;
+        
+    }
+}
+
+.lightheaderLinkItem{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #373737;
+    margin-left: 37.5px;
+    margin-right: 37.5px;
+    transition: 0.4s;
+    &:hover{
+        color: #8C10B8;
+        transition: 0.4s;
+    }
+}
+
+.btnHeaderDiv{
+    display: flex;
+    flex-direction: row;
+    & .headerLinkItem{
+       margin-right: 17px; 
+    }
+    @include respond('tablet'){
+       display: none;
+    }
+    @include respond('mobile'){
+       display: none;
+    }
+}
+
+.firstCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+    @include respond('tablet'){
+       flex-direction: column !important;
+    }
+    @include respond('mobile'){
+       flex-direction: column !important;
+    }
+}
+
+.firstCardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/rightArrow.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    align-items: flex-start;
+    @include respond('tablet'){
+        background-image: none;
+        align-items: center !important;
+        text-align: center;
+        margin-top: 50px;
+     }
+     @include respond('mobile'){
+        background-image: none;
+        align-items: center !important;
+        text-align: center;
+        margin-top: 50px;
+     }
+}
+
+.firstCardBtnDiv{
+    display: flex;
+    flex-direction: row;
+    justify-self: baseline;
+}
+
+.firstCardTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 81px;
+    line-height: 96px;
+    color: #E8E6E3;
+    width: 87%;
+}
+
+.lightfirstCardTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 81px;
+    line-height: 96px;
+    color: #373737;
+    width: 87%;
+}
+
+.firstCardText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #E8E6E3;
+    width: 90%;
+    margin-top: 26.5px;
+    margin-bottom: 38.5px;
+}
+
+.lightfirstCardText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #373737;
+    width: 90%;
+    margin-top: 26.5px;
+    margin-bottom: 38.5px;
+}
+
+.firstImageDiv{
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+
+    @include respond('tablet'){
+       margin-left: auto;
+       margin-right: auto;
+       width: 500px;
+    }
+    @include respond('mobile'){
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+}
+
+.null{
+    width: 16.59px;
+    background: none;
+    border: none;
+}
+
+.sponsorSection{
+    background-color: #0A010D;
+    padding-bottom: 160px;
+}
+
+.lightsponsorSection{
+    background-color: #e2e1e3;
+    padding-bottom: 160px;
+}
+
+.sponsorDiv{
+    border-width: 0.8px 0px;
+    border-style: solid;
+    border-color: rgba(16, 172, 101, 0.2);
+    margin-top: 72px;
+}
+
+.lightsponsorDiv{
+    border-width: 0.8px 0px;
+    border-style: solid;
+    border-color: rgba(55, 55, 55, 0.2);
+    margin-top: 72px;
+}
+
+.sponsorTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    color: #E8E6E3;
+    margin-top: 29px;
+    margin-bottom: 32.5px;
+}
+.lightsponsorTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    color: #373737;
+    margin-top: 29px;
+    margin-bottom: 32.5px;
+}
+
+.sponsorImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section{
+    background: #0A010D;
+    position: relative;
+    z-index: 2;
+    & .cardCizgi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.lightsection{
+    background: #e8e8e8;
+    position: relative;
+    z-index: 2;
+    & .cardCizgi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cardStatic{
+    position: relative;
+    & .cardKaralama{
+        position: absolute;
+        bottom: 161px;
+        right: 43%;
+        @include respond('tablet'){
+            right: 35% !important;
+         }
+         @include respond('mobile'){
+            right: 35% !important;
+         }
+    }
+}
+
+.cardCizgiTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 74px;
+    text-align: center;
+    color: #E8E6E3;
+    width: 60%;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.lightcardCizgiTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 74px;
+    text-align: center;
+    color: #373737;
+    width: 60%;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.cardCizgiText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #E8E6E3;
+    margin-top: 25px;
+    margin-bottom: 83.6px;
+    width: 55%;
+    align-items: center;
+}
+
+.lightcardCizgiText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #373737;
+    margin-top: 25px;
+    margin-bottom: 83.6px;
+    width: 55%;
+    align-items: center;
+}
+
+.cardCardDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @include respond('tablet'){
+       flex-direction: column;
+    }
+    @include respond('mobile'){
+       flex-direction: column;
+    }
+
+    & .cardCard{
+        background: rgba(22, 3, 29, 0.75);
+        border: 1px solid #8C10B8;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 423.32px;
+        height: 324.2px;
+        padding-top: 51.6px;
+        padding-left: 31.6px;
+        margin-right: 12.5px;
+        margin-left: 12.5px;
+
+        @include respond('tablet'){
+           margin-top: 50px;
+        }
+        @include respond('mobile'){
+           margin-bottom: 50px;
+        }
+
+        & .cardCardTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 42px;
+            color: #E8E6E3;
+            margin-top: 27.4px;
+            margin-bottom: 12.2px;
+        }
+        & .cardCardText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #E8E6E3;
+            width: 90%;
+        }
+    }
+}
+
+.lightcardCardDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include respond('tablet'){
+        flex-direction: column;
+    }
+    @include respond('mobile'){
+       flex-direction: column;
+    }
+
+    & .cardCard{
+        background: #dededf;
+        border: 1px solid #8C10B8;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 423.32px;
+        height: 324.2px;
+        padding-top: 51.6px;
+        padding-left: 31.6px;
+        margin-right: 12.5px;
+        margin-left: 12.5px;
+        @include respond('tablet'){
+           margin-top: 50px;
+        }
+        @include respond('mobile'){
+           margin-bottom: 50px;
+        }
+
+        & .cardCardTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 42px;
+            color: #373737;
+            margin-top: 27.4px;
+            margin-bottom: 12.2px;
+        }
+        & .cardCardText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #373737;
+            width: 90%;
+        }
+    }
+}
+
+.cardSecondDiv{
+    display: flex;
+    flex-direction: row;
+    padding-top: 194.8px;
+    padding-bottom: 140px;
+    @include respond('tablet'){
+       flex-direction: column;
+    }
+    @include respond('mobile'){
+       flex-direction: column;
+    }
+    & .cardSecondContent{
+        display: flex;
+        flex-direction: column;
+        @include respond('tablet'){
+           align-items: center;
+           text-align: center;
+        }
+        @include respond('mobile'){
+           align-items: center;
+           text-align: center;
+        }
+
+        & .cardSecondTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 74px;
+            color: #E8E6E3;
+        }
+        & .cardSecondText{            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 28px;
+            color: #E8E6E3;
+            margin-top: 23px;
+            margin-bottom: 44px;
+        }
+    }
+}
+
+.lightcardSecondDiv{
+    display: flex;
+    flex-direction: row;
+    padding-top: 194.8px;
+    padding-bottom: 140px;
+    @include respond('tablet'){
+       flex-direction: column;
+    }
+    @include respond('mobile'){
+       flex-direction: column;
+    }
+    & .cardSecondContent{
+        display: flex;
+        flex-direction: column;
+        & .cardSecondTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 74px;
+            color: #373737;
+        }
+        & .cardSecondText{            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 28px;
+            color: #373737;
+            margin-top: 23px;
+            margin-bottom: 44px;
+        }
+    }
+}
+
+.purpleSection{
+    background: #260731;
+
+    & .thirdRelative{
+        position: relative;
+        z-index: 5;
+
+        & .thirdImg{
+            position: absolute;
+            left:300px;
+            top:-40px;
+            height: 700px;
+            @include respond('tablet'){
+                left: 20% !important;
+                top:500px !important;
+            }
+            @include respond('mobile'){
+                left: 10% !important;
+                top: 500px !important;
+            }
+        }
+    }
+
+    & .purpleContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50%;
+
+        @include respond('tablet'){
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            margin-left: 0px !important;
+            height: 1250px;
+        }
+        @include respond('mobile'){
+            justify-content: flex-start;
+            align-items: center ;
+            text-align: center ;
+            margin-left: 0px !important;
+            height: 1250px;
+        }
+
+        & .lightText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 26px;
+            color: #FF00D6;
+            margin-top: 77px;
+            margin-bottom: 21px;
+        }
+        & .purpleTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 51px;
+            line-height: 64px;
+            color: #E8E6E3;
+            width: 55%;
+        }
+        & .secureText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #8E49FF;
+            margin-left: 15.4px;
+            margin-top: 23px;
+            margin-bottom: 24px;
+        }
+        & .purpleText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #E8E6E3;
+            width: 50%;
+            margin-bottom: 92.4px;
+        }
+        & .purpleSecureDiv{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+@media screen and (max-width: 1771px) {
+    .thirdImg{
+        left: 225px !important;
+    }
+    .purpleContent{
+        margin-left: 55% !important;
+    }
+    .purpleTitle{
+        width: 75% !important;
+    }
+    .purpleText{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 1560px) {
+    .thirdImg{
+        left: 150px !important;
+    }
+}
+@media screen and (max-width: 1430px) {
+    .thirdImg{
+        left: 100px !important;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .thirdImg{
+        left: 70px !important;
+    }
+}
+@media screen and (max-width: 1701px) {
+    .cardKaralama{
+        right: 41% !important;
+    }
+}
+@media screen and (max-width: 1409px) {
+    .cardKaralama{
+        bottom: 190px !important;
+    }
+}
+@media screen and (max-width: 1363px) {
+    .cardKaralama{
+        right: 39% !important;
+    }
+}
+
+.lightpurpleSection{
+    background: #630E81;
+
+    & .thirdRelative{
+        position: relative;
+        z-index: 5;
+
+        & .thirdImg{
+            position: absolute;
+            left:300px;
+            top:-40px;
+            height: 700px;
+            @include respond('tablet'){
+                left: 20% !important;
+                top: 500px !important;
+            }
+            @include respond('mobile'){
+                left: 10% !important;
+                top: 500px !important;
+            }
+        }
+    }
+
+    & .purpleContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50%;
+
+        @include respond('tablet'){
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            margin-left: 0px !important;
+            height: 1250px;
+        }
+        @include respond('mobile'){
+            justify-content: flex-start;
+            align-items: center ;
+            text-align: center ;
+            margin-left: 0px !important;
+            height: 1250px;
+        }
+
+        & .lightText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 26px;
+            color: #FF00D6;
+            margin-top: 77px;
+            margin-bottom: 21px;
+        }
+        & .purpleTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 51px;
+            line-height: 64px;
+            color: #E8E6E3;
+            width: 55%;
+        }
+        & .secureText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #8E49FF;
+            margin-left: 15.4px;
+            margin-top: 23px;
+            margin-bottom: 24px;
+        }
+        & .purpleText{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #E8E6E3;
+            width: 50%;
+            margin-bottom: 92.4px;
+        }
+        & .purpleSecureDiv{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+
+.uiCardDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 268px;
+    @include respond('tablet'){
+        flex-direction: column;
+        padding-top: 70px;
+     }
+     @include respond('mobile'){
+        flex-direction: column;
+        padding-top: 70px;
+     }
+}
+
+.uiCardContent{
+    display: flex;
+    flex-direction: column;
+
+    @include respond('tablet'){
+        align-items: center;
+        margin-bottom: 30px;
+     }
+     @include respond('mobile'){
+        align-items: center;
+        margin-bottom: 30px;
+     }
+
+    & .uiCardTitle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 64px;
+        color: #E8E6E3;
+    
+        @include respond('tablet'){
+            width: 75%;
+            text-align: center;
+         }
+         @include respond('mobile'){
+            width: 75%;
+            text-align: center;
+         }
+    }
+
+    & .uiCardText{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #E8E6E3;
+        margin-top: 35px;
+        margin-bottom: 44px;
+
+        @include respond('tablet'){
+            width: 75%;
+            text-align: center;
+         }
+         @include respond('mobile'){
+            width: 75%;
+            text-align: center;
+         }
+    }
+
+    & .lightuiCardTitle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 64px;
+        color: #373737;
+        @include respond('tablet'){
+            width: 75%;
+            text-align: center;
+         }
+         @include respond('mobile'){
+            width: 75%;
+            text-align: center;
+         }
+    }
+
+    & .lightuiCardText{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #373737;
+        margin-top: 35px;
+        margin-bottom: 44px;
+        @include respond('tablet'){
+            width: 75%;
+            text-align: center;
+         }
+         @include respond('mobile'){
+            width: 75%;
+            text-align: center;
+         }
+    }
+}
+
+.uiCardPurple{
+    display: flex;
+    flex-direction: column;
+
+    & .uiCardEnclusive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24.81px;
+        background: #280634;
+        border-radius: 20px;
+        padding-left: 60px;
+        width: 690px;
+        height: 292.57px;
+        margin-left: 74px;
+        @include respond('tablet'){
+            margin-left: 0px;
+         }
+         @include respond('mobile'){
+            margin-left: 0px;
+         }
+        & .uiPurpleDiv{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            & .uiPurpleNumber{
+                width: 50px;
+                height: 50px;
+                background: #8C10B8;
+                border-radius: 10px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                color: #E8E6E3;
+                justify-content: center;
+            }
+
+            & .uiPurpleTitle{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 34px;
+                color: #E8E6E3;
+                margin-top: 22.4px;
+                margin-bottom: 16.8px;
+            }
+
+            & .uiPurpleText{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #E8E6E3;
+                width: 90%;
+            }
+        }
+
+        & .uiPurpleDarkDiv{
+            width: 550px;
+            height: 292.39px;
+            background: #8C10B8;
+            border-radius: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+    }
+
+    & .lightuiCardEnclusive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24.81px;
+        background: #e2e1e3;
+        border-radius: 20px;
+        padding-left: 60px;
+        width: 690px;
+        height: 292.57px;
+        margin-left: 74px;
+        @include respond('tablet'){
+            margin-left: 0px;
+         }
+         @include respond('mobile'){
+            margin-left: 0px;
+         }
+        
+        & .uiPurpleDiv{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            & .uiPurpleNumber{
+                width: 50px;
+                height: 50px;
+                background: #8C10B8;
+                border-radius: 10px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                color: #E8E6E3;
+                justify-content: center;
+            }
+
+            & .uiPurpleTitle{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 34px;
+                color: #373737;
+                margin-top: 22.4px;
+                margin-bottom: 16.8px;
+            }
+
+            & .uiPurpleText{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #373737;
+                width: 90%;
+            }
+        }
+
+        & .uiPurpleDarkDiv{
+            width: 550px;
+            height: 292.39px;
+            background: #8C10B8;
+            border-radius: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+    }
+}
+
+.sssKaralama{
+    position: absolute;
+    top: 128px;
+    left: -42px;
+    z-index: 0;
+    @include respond('tablet'){
+        left: 30%;
+     }
+     @include respond('mobile'){
+        left: 30%;
+     }
+}
+
+.sssSection{
+    position: relative;
+    background: #0A010D;
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+    @include respond('tablet'){
+        padding-top: 165px;
+        padding-bottom: 165px;
+    }
+    @include respond('mobile'){
+        padding-top: 165px;
+        padding-bottom: 165px;
+    }
+
+    & .sssTitle{
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 74px;
+        color: #E8E6E3;
+        width: 40%;
+        z-index: 2;
+        @include respond('tablet'){
+            width: 60%;
+            left: 20%;
+            text-align: center;
+         }
+         @include respond('mobile'){
+            width: 60%;
+            text-align: center;
+            left: 20%;
+         }
+    }
+    
+    & .sssText{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #E8E6E3;
+        width: 60%;
+        margin-top: 26px;
+        margin-bottom: 50px;
+        @include respond('tablet'){
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+        @include respond('mobile'){
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+    }
+    
+    & .faqText{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #E8E6E3;
+    }
+}
+
+.lightsssSection{
+    position: relative;
+    background: #e0dddb;
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+    @include respond('tablet'){
+        padding-top: 165px;
+        padding-bottom: 165px;
+    }
+    @include respond('mobile'){
+        padding-top: 165px;
+        padding-bottom: 165px;
+    }
+
+    & .sssTitle{
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 74px;
+        color: #373737;
+        width: 40%;
+        z-index: 2;
+        @include respond('tablet'){
+            width: 60%;
+            left: 20%;
+            text-align: center;
+         }
+         @include respond('mobile'){
+            width: 60%;
+            text-align: center;
+            left: 20%;
+         }
+    }
+    
+    & .sssText{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #373737;
+        width: 60%;
+        margin-top: 26px;
+        margin-bottom: 50px;
+        @include respond('tablet'){
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+        @include respond('mobile'){
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+    }
+    
+    & .faqText{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: #373737;
+    }
+}
+
+.sssCardDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.faqCard{
+    width:calc(50% - 12.5px);
+}
+
+@media screen and (max-width: 992px){
+    .faqCard{
+        width: 100% !important;
+        margin-top: 12.5px !important;
+        margin-bottom: 12.5px !important;
+    }
+    .sssCardDiv{
+        flex-direction: column !important;
+        margin-top: 0px !important;
+    }
+}
+
+.lightSummary{
+    color:#8C10B8;
+}
+
+.sssBG{
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+    z-index: 1;
+}
+
+.lightsssBG{
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+    z-index: 1;
+}
+
+.faqContainer{
+    z-index: 3;
+}
+
+.sssCardStatic{
+    position: relative;
+    z-index: 2;
+}
+
+.footerLogoTitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6044px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.lightfooterLogoTitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6044px;
+    line-height: 26px;
+    color: #373737;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.footerLogoText{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.6044px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.lightfooterLogoText{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.6044px;
+    line-height: 26px;
+    color: #373737;
+}
+
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+    & .footerInclusive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+}
+
+.footerItemContent{
+    display: flex;
+    flex-direction: column;
+    margin-right: 88px;
+
+    @include respond('tablet'){
+        margin-right: 30px;
+    }
+    @include respond('mobile'){
+        margin-right: 30px;
+    }
+
+    & .footerItemTitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17.6044px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-bottom: 14.49px;
+    }
+    & .footerItemText{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14.9637px;
+        line-height: 22px;
+        color: #FFFFFF;
+        text-align: start;
+        transition: 0.4s;
+        &:hover{
+            color: #8C10B8;
+            transition: 0.4s;
+        }
+    }
+}
+
+.lightfooterItemContent{
+    display: flex;
+    flex-direction: column;
+    margin-right: 88px;
+    @include respond('tablet'){
+        margin-right: 30px;
+    }
+    @include respond('mobile'){
+        margin-right: 30px;
+    }
+
+    & .footerItemTitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17.6044px;
+        line-height: 26px;
+        color: #373737;
+        margin-bottom: 14.49px;
+    }
+    & .footerItemText{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14.9637px;
+        line-height: 22px;
+        color: #373737;
+        text-align: start;
+        transition: 0.4s;
+        &:hover{
+            transition: 0.4s;
+            color: #8C10B8;
+        }
+    }
+}
+
+.footerSocial{
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+
+    & .footerSocialTitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17.6044px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    & .footerSocialCardDiv{
+        display: flex;
+        flex-direction: row;
+
+        @include respond('tablet'){
+            flex-direction: column !important;
+            align-items: center;
+        }
+        @include respond('mobile'){
+           flex-direction: column !important;
+           align-items: center;
+        }
+
+        & .socialCard{
+            width: 26.41px;
+            height: 26.41px;
+            background: #FFFFFF;
+            border-radius: 2.84982px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: 0.4s;
+            &:hover{
+                background-color: #8C10B8;
+                transition: 0.4s;
+            }
+
+            @include respond('tablet'){
+                margin-right: 0px;
+                margin-bottom: 5px;
+            }
+            @include respond('mobile'){
+                margin-right: 0px;
+                margin-bottom: 5px;
+            }
+
+            & .icon{
+                color: #0A010D;
+            }
+        }
+    }
+}
+
+.lightfooterSocial{
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+
+    & .footerSocialTitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17.6044px;
+        line-height: 26px;
+        color: #373737;
+    }
+
+    & .footerSocialCardDiv{
+        display: flex;
+        flex-direction: row;
+
+        @include respond('tablet'){
+            flex-direction: column !important;
+            align-items: center;
+        }
+        @include respond('mobile'){
+           flex-direction: column !important;
+           align-items: center;
+        }
+
+        & .socialCard{
+            width: 26.41px;
+            height: 26.41px;
+            background: #373737; 
+            border-radius: 2.84982px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: 0.4s;
+            &:hover{
+                background-color: #8C10B8;
+                transition: 0.4s;
+            }
+            
+            @include respond('tablet'){
+                margin-right: 0px;
+                margin-bottom: 5px;
+            }
+            @include respond('mobile'){
+                margin-right: 0px;
+                margin-bottom: 5px;
+            }
+
+            & .icon{
+                color: #E8E6E3;
+            }
+        }
+    }
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright{
+    padding-top: 37.85px;
+    padding-bottom: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.2033px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.85);
+    border-top: 0.594503px solid rgba(255, 255, 255, 0.3);
+    outline-style: solid;
+    outline-color: #0A010D;
+    outline-width: 2px;
+}
+
+.lightcopyright{
+    padding-top: 37.85px;
+    padding-bottom: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.2033px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #373737;
+    border-top: 0.594503px solid rgba(255, 255, 255, 0.3);
+}
+
+.lightsectionfooter{
+    background-color: white;
+}
+
+.sub .lightsectionfooter{
+    background-image: url('../img/lastBG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #e8e8e8;
+}

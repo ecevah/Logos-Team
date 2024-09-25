@@ -1,0 +1,429 @@
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/loginBG.png');
+    background-color: #FFFFFF;
+    background-repeat:repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .inclusive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        & .content{
+            height: 457px;
+            width: 415px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 3px rgba(60, 72, 88, 0.15);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 47px 24.5px;
+            margin-top: 4px;
+
+            & .title{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+                color: #212529;
+            }
+
+            & .starContentHalf{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .starInclusive{
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                }
+            }
+
+            & .starContent{
+                display: flex;
+                flex-direction: row;
+                margin-top: 23px;
+                margin-bottom: 8px;
+
+                & .blackText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #212529;
+                }
+
+                & .starText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #F0735A;
+                }
+            }
+
+            & .input{
+                background: #FFFFFF;
+                border: 1px solid #E9ECEF;
+                border-radius: 6px;
+                height: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                color: #212529;
+            }
+
+            & .forgot{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: right;
+                color: #212529;
+                margin-top: 15px;
+                margin-bottom: 26px;
+                width: 135px;
+                margin-left: auto;
+            }
+
+            & .button{
+                height: 40px;
+                width: 100%;
+                background: #8C10B8;
+                border: 1px solid #396CF0;
+                border-radius: 5px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+            }
+
+            & .signContent{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 21px;
+
+                & .signText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #212529;
+                    margin-right: 5px;
+                }
+
+                & .signPurple{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #46005F;
+                }
+            }
+        }
+    
+        & .contentSign{
+            height: 544px;
+            width: 415px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 3px rgba(60, 72, 88, 0.15);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 47px 24.5px;
+            margin-top: 4px;
+
+            & .title{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+                color: #212529;
+            }
+
+            & .starContentHalf{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & .starInclusive{
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                }
+            }
+
+            & .starContent{
+                display: flex;
+                flex-direction: row;
+                margin-top: 23px;
+                margin-bottom: 8px;
+
+                & .blackText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #212529;
+                }
+
+                & .starText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #F0735A;
+                }
+            }
+
+            & .input{
+                background: #FFFFFF;
+                border: 1px solid #E9ECEF;
+                border-radius: 6px;
+                height: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                color: #212529;
+            }
+
+            & .forgot{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: right;
+                color: #212529;
+                margin-top: 15px;
+                margin-bottom: 26px;
+            }
+
+            & .button{
+                height: 40px;
+                width: 100%;
+                background: #8C10B8;
+                border: 1px solid #396CF0;
+                border-radius: 5px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: #FFFFFF;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: #FFFFFF;
+                    transition: 0.2s;
+                    color: #8C10B8;
+                    font-weight: 600;
+                }
+            }
+
+            & .buttonArrow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 100%;
+                background: #FFFFFF;
+                border: 1px solid #8C10B8;
+                border-radius: 5px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: #8C10B8;
+                margin-top: 10px;
+                &:hover{
+                    background-color: #8C10B8;
+                    transition: 0.2s;
+                    color: #FFFFFF;
+                }
+            }
+
+            & .signContent{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 21px;
+
+                & .signText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #212529;
+                    margin-right: 5px;
+                }
+
+                & .signPurple{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #46005F;
+                }
+            }
+
+            & .ifContent{
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+                margin-bottom: 24px;
+
+                & .ifBtn{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #46005F;
+                    margin-left: 7px;
+                    margin-right: 4px;
+                }
+
+                & .ifText{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #212529;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .inclusive{
+        zoom: 1.5;
+    }
+    .kosulContent{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .inclusive{
+        zoom: 2;
+    }
+    .kosulContent{
+        width: 95% !important;
+    }
+}
+
+.relative{
+    position: relative;
+}
+
+.absoluteShow{
+    position: absolute;
+    top: -28px;
+    right: 15px;
+}
+
+.absoluteText{
+    position: absolute;
+    top: 7px;
+    right: 35px;
+}
+
+.none{
+    display: none;
+}
+
+.kosul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 37, 41, 0.4);
+    z-index: 90;
+
+    & .kosulContent{
+        position: sticky;
+        width: 60%;
+        height: 60%;
+        background-color: #396CF0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 17vh;
+
+        & .kosulInclusive{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            
+            & .kosulText{
+                background-color: #FFFFFF;
+                overflow: auto;
+                height: 88%;
+                padding: 10px;
+            }
+
+            & .kosulBtnInclusive{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+            
+                & .kosulbtn{
+                    width: 150px;
+                    height: 70px;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    
+                }
+            }
+        }
+    }
+}
